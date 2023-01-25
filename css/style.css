@@ -584,13 +584,19 @@ html {
   font-family: "cf light";
 }
 .sideBar.dark .sideDashboardSection a img,
-.navbar .navLeft img,
+.navbar.dark .navLeft img,
 .navbar.dark .nav-item img {
   filter: invert();
 }
-
+.navbar.dark .navLeft a:last-child{
+  color: white;
+}
 .mainBody .navbar.dark .searchArea input {
   background: rgba(255, 255, 255, 0.1);
+}
+.mainBodyContent.dark .dropdown-menu{
+  background-color: #1c1c1c;
+  border: 1px solid black;
 }
 
 /* cards dark */
@@ -604,10 +610,12 @@ html {
   background: #333333;
 }
 .mainBodyContent.dark .challengeCardSky,
-.mainBodyContent.dark .challengeCardGray,
 .mainBodyContent.dark .supportInfo,
 .mainBodyContent.dark .website {
   background: rgba(255, 255, 255, 0.8);
+}
+.mainBodyContent.dark .challengeCardGray{
+  background: #E3F5FF;
 }
 .mainBodyContent.dark .challengeCardSky .mainTitle,
 .mainBodyContent.dark .challengeCardGray .mainTitle,
