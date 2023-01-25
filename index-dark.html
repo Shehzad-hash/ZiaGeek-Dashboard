@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home dark</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="bodyWrapper">
+      <!-- sideBar -->
+      <div class="sideBar dark">
+        <i class="fa-solid fa-chevron-left" onclick="sideMenuToggle()"></i>
+        <h1 class="sideHeader">The Prop Firm Journal</h1>
+        <div class="sideDashboardSection">
+          <div class="silentText">Dashboards</div>
+          <a href="./index-dark.html" class="active-link"
+            ><i class="fa-solid fa-chevron-right"></i
+            ><img src="./img/ChartPieSlice.svg" alt="" />Explore</a
+          >
+          <a href="./compare-dark.html"
+            ><i class="fa-solid fa-chevron-right"></i
+            ><img src="./img/ShoppingBagOpen.svg" alt="" />Compare</a
+          >
+        </div>
+        <div class="sideRankingSection">
+          <div class="silentText">Rankings</div>
+          <a href="#" class="sideMenuLink">Pricing</a>
+          <a href="#" class="sideMenuLink active-link">Account Size</a>
+          <a href="#" class="sideMenuLink">Max Scaling</a>
+          <a href="#" class="sideMenuLink">Max Profit Share</a>
+          <a href="#" class="sideMenuLink">Fastest Payout</a>
+          <a href="#" class="sideMenuLink">Most Voted</a>
+        </div>
+        <a href="#" class="sideBarLogo"
+          ><img src="./img/Snow Logo.png" alt=""
+        /></a>
+      </div>
+      <!-- main body -->
+      <div class="mainBody">
+        <div class="row g-0">
+          <div class="col-lg-9">
+            <!-- nav bar section -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary dark">
+              <div class="container-fluid">
+                <i
+                  class="fa-solid fa-chevron-right"
+                  onclick="sideMenuToggle()"
+                ></i>
+                <div class="navLeft mx-auto mx-lg-0">
+                  <a href="#"><img src="./img/dashboard.svg" alt="" /></a>
+                  <a href="#"><img src="./img/star.svg" alt="" /></a>
+                  <a href="#" class="silentText">Dashboards /</a>
+                  <a href="#">Explore</a>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <div class="searchArea nav-link">
+                        <img src="./img/darkSearch.svg" alt="" />
+                        <input type="search" placeholder="Search" />
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/sun.svg" alt=""
+                      /></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/timer.svg" alt=""
+                      /></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/bell.svg" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- mainbody content -->
+            <div class="mainBodyContent dark">
+              <!-- header -->
+              <div class="bodyHeader">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Select Company
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Select Program
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- company section -->
+              <div class="companySection">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="programSection">
+                      <div class="row">
+                        <div class="col text-center">
+                          <h1 class="mainTitle">Company Name</h1>
+                          <img src="./img/fSword.png" alt="" class="sword" />
+                        </div>
+                        <div class="col">
+                          <h1 class="mainTitle">Program Name</h1>
+                          <div class="programCard">
+                            <p class="smText">Program Type</p>
+                            <h1 class="mainTitle">2 Step</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 mt-lg-0">
+                    <div class="capCard">
+                      <h1 class="mainTitle">EightCap</h1>
+                      <p class="smText">Broker</p>
+                    </div>
+                    <div class="capCard">
+                      <span class="smText">Platforms</span>
+                      <img src="./img/mt4.png" alt="" />
+                      <img src="./img/mt5.png" alt="" class="ms-3" />
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="capCard">
+                          <h1 class="mainTitle">$5/lot</h1>
+                          <p class="smText">Commission on FX</p>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="capCard">
+                          <h1 class="mainTitle">1:200</h1>
+                          <p class="smText">Leverage on FX</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Challenge information -->
+              <div class="challenge">
+                <div class="subTitle mt-3 mb-3">
+                  General Challenge Information
+                </div>
+                <div class="row">
+                  <div class="col-lg-9">
+                    <div class="row">
+                      <div class="col">
+                        <div class="challengeCardSky">
+                          <h1 class="subTitle">Minimum Days</h1>
+                          <h1 class="mainTitle">5 Days</h1>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="challengeCardSky">
+                          <h1 class="subTitle">Drawdown Type</h1>
+                          <div class="row">
+                            <div class="col">
+                              <h1 class="mainTitle">Equity</h1>
+                              <p class="smText">Daily</p>
+                            </div>
+                            <div class="col">
+                              <h1 class="mainTitle">Fixed</h1>
+                              <p class="smText">Overall</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="challengeCardSky">
+                          <h1 class="subTitle">Drawdown Limit</h1>
+                          <div class="row">
+                            <div class="col">
+                              <h1 class="mainTitle">5%</h1>
+                              <p class="smText">Daily</p>
+                            </div>
+                            <div class="col">
+                              <h1 class="mainTitle">10%</h1>
+                              <p class="smText">Overall</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col">
+                        <div class="challengeCardGray">
+                          <h1 class="subTitle">Phase 1</h1>
+                          <div class="row">
+                            <div class="col">
+                              <h1 class="mainTitle">30</h1>
+                              <p class="smText">Max Days</p>
+                            </div>
+                            <div class="col">
+                              <h1 class="mainTitle">8%</h1>
+                              <p class="smText">Profit Target</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="challengeCardGray">
+                          <h1 class="subTitle">Phase 2</h1>
+                          <div class="row">
+                            <div class="col">
+                              <h1 class="mainTitle">60</h1>
+                              <p class="smText">Max Days</p>
+                            </div>
+                            <div class="col">
+                              <h1 class="mainTitle">5%</h1>
+                              <p class="smText">Profit Target</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="challengeCardGray">
+                          <h1 class="subTitle">Phase 3</h1>
+                          <h1 class="mainTitle">N/A</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="restrictionContainer">
+                      <h1 class="subTitle text-center">Restrictions</h1>
+                      <div class="restrictions">
+                        <div class="restriction">
+                          <img src="./img/X.svg" alt="" />SL Required
+                        </div>
+                        <div class="restriction">
+                          <img src="./img/CheckSquare.svg" alt="" />EA’s
+                        </div>
+                        <div class="restriction">
+                          <img src="./img/X.svg" alt="" />Consistency
+                        </div>
+                        <div class="restriction">
+                          <img src="./img/CheckSquare.svg" alt="" />Weekend
+                          Holding
+                        </div>
+                        <div class="restriction">
+                          <img src="./img/CheckSquare.svg" alt="" />News Trading
+                        </div>
+                        <div class="restriction">
+                          <img src="./img/CheckSquare.svg" alt="" />Crypto on
+                          Weekends
+                        </div>
+                        <div class="restriction">
+                          <img src="./img/CheckSquare.svg" alt="" />Weekend
+                          Holding
+                        </div>
+                        <div class="restriction">
+                          <img src="./img/CheckSquare.svg" alt="" />News Trading
+                        </div>
+                        <div class="restriction">
+                          <img src="./img/CheckSquare.svg" alt="" />Crypto on
+                          Weekends
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- price section -->
+              <div class="price">
+                <h1 class="subTitle text-center mt-3 mb-3">Price</h1>
+                <div class="priceCard">
+                  <h1 class="subTitle">Account Sizes Offered</h1>
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="mainTitle">$25,000</h1>
+                      <h6 class="subTitle">$200</h6>
+                    </div>
+                    <div class="col">
+                      <h1 class="mainTitle">$50,000</h1>
+                      <h6 class="subTitle">$300</h6>
+                    </div>
+                    <div class="col">
+                      <h1 class="mainTitle">$100,000</h1>
+                      <h6 class="subTitle">$500</h6>
+                    </div>
+                    <div class="col">
+                      <h1 class="mainTitle">$200,000</h1>
+                      <h6 class="subTitle">$900</h6>
+                    </div>
+                    <div class="col">
+                      <h1 class="mainTitle">$400,000</h1>
+                      <h6 class="subTitle">$1,500</h6>
+                    </div>
+                  </div>
+                  <h1 class="subTitle mt-3">Price per DrawDown</h1>
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="mainTitle">$0.08</h1>
+                    </div>
+                    <div class="col">
+                      <h1 class="mainTitle">$0.06</h1>
+                    </div>
+                    <div class="col">
+                      <h1 class="mainTitle">$0.05</h1>
+                    </div>
+                    <div class="col">
+                      <h1 class="mainTitle">$0.045</h1>
+                    </div>
+                    <div class="col">
+                      <h1 class="mainTitle">$0.037</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Payouts section -->
+              <h1 class="subTitle mt-3 mb-3 text-center">Payouts</h1>
+              <div class="payouts">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="subTitle">Refund</h6>
+                    <h1 class="mainTitle">100%</h1>
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">First Profit Split %</h6>
+                    <h1 class="mainTitle">80%</h1>
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">First Withdrawal</h6>
+                    <h1 class="mainTitle">30 Days</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="payouts">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="subTitle">Profits from Demo Phase?</h6>
+                    <h1 class="mainTitle"><img src="./img/X.png" alt="" /></h1>
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">Max Profit Split %</h6>
+                    <h1 class="mainTitle">95%</h1>
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">Min. Days to Payout</h6>
+                    <h1 class="mainTitle">40 Days</h1>
+                  </div>
+                </div>
+              </div>
+              <!-- Scaling Program -->
+              <h1 class="subTitle mt-3 mb-3 text-center">Scaling Program</h1>
+              <div class="scaling">
+                <h6 class="subTitle">Requirements for Scale</h6>
+                <h1 class="mainTitle">
+                  Make 10% in 4 months. Have 2 of those months positive.
+                </h1>
+                <h6 class="subTitle mt-4">Benefits</h6>
+                <h1 class="mainTitle">
+                  30% Balance Increase + 90% Profit Split
+                </h1>
+              </div>
+              <div class="scalingCards">
+                <div class="row">
+                  <div class="col">
+                    <div class="scaleCard">
+                      <h6 class="subTitle">Max Funded Allocation</h6>
+                      <h1 class="mainTitle">$400,000</h1>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="scaleCard">
+                      <h6 class="subTitle">Max Scaling Allocation</h6>
+                      <h1 class="mainTitle">$1,500,000</h1>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="scaleCard">
+                      <h6 class="subTitle">Time to 1M from Max Allocation</h6>
+                      <h1 class="mainTitle">1 Year</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Support Information -->
+              <h1 class="subTitle mb-3 mt-3 text-center">
+                Support Information
+              </h1>
+              <div class="supportInfo">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="subTitle">Website Live Chat Days</h6>
+                    <h1 class="mainTitle">
+                      Monday to<br />
+                      Sunday
+                    </h1>
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">Website Live Chat Hours</h6>
+                    <h1 class="mainTitle">
+                      00:00 -<br />
+                      23:59
+                    </h1>
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">Average Response Time</h6>
+                    <h1 class="mainTitle">5 minutes</h1>
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">TrustPilot Rating</h6>
+                    <h1 class="mainTitle">4.9 Stars</h1>
+                  </div>
+                </div>
+              </div>
+              <!-- Company Social Media -->
+              <h1 class="subTitle mt-3 mb-3 text-center">
+                Company Social Media
+              </h1>
+              <div class="media">
+                <a href="#"><img src="./img/Discord.png" alt="" /></a>
+                <a href="#"><img src="./img/Instagram.png" alt="" /></a>
+                <a href="#"><img src="./img/Facebook.png" alt="" /></a>
+                <a href="#"><img src="./img/Twitter.png" alt="" /></a>
+                <a href="#"><img src="./img/Youtube.png" alt="" /></a>
+                <a href="#"><img src="./img/Tik Tok.png" alt="" /></a>
+                <a href="#"><img src="./img/Telegram.png" alt="" /></a>
+              </div>
+              <!-- Website -->
+              <h1 class="subTitle mt-3 mb-3 text-center">Website</h1>
+              <div class="website">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="subTitle">Own App?</h6>
+                    <img src="./img/bigX.png" alt="" />
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">Dashboard</h6>
+                    <img src="./img/Eye.png" alt="" />
+                  </div>
+                  <div class="col">
+                    <h6 class="subTitle">Website in other lenguages?</h6>
+                    <img src="./img/check.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- CEO Information -->
+              <h1 class="mainTitle mt-3 mb-3 text-center">CEO Information</h1>
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <div class="ceo">
+                    <div class="row">
+                      <div class="col-5">
+                        <img src="./img/ceo.png" alt="" />
+                      </div>
+                      <div class="col-7">
+                        <h6 class="subTitle">Name</h6>
+                        <h1 class="mainTitle">Angelo Ciaramello</h1>
+                        <h6 class="subTitle">Country</h6>
+                        <h1 class="mainTitle">United States</h1>
+                        <h6 class="smText">Public Instagram</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- footer -->
+              <footer class="pageFooter deskTopView">
+                <div class="row">
+                  <div class="col-lg-4"><span>© 2022 Snow</span></div>
+                  <div class="col-lg-8 text- text-lg-end mt-3 mt-lg-0">
+                    <a href="#" class="footerLink">About</a>
+                    <a href="#" class="footerLink">Support</a>
+                    <a href="#" class="footerLink">Contact Us</a>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <!-- update -->
+            <div class="updateBody dark">
+              <h1 class="updateTitle">Updates</h1>
+              <div class="updateDetail">
+                <div class="update">
+                  <div class="updateIcon sky"></div>
+                  <div>
+                    <p class="mainText">The Funded Trader Program...</p>
+                    <p class="time">5m ago</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon gray"></div>
+                  <div>
+                    <p class="mainText">True Forex Funds allowed...</p>
+                    <p class="time">1:23 AM</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon sky"></div>
+                  <div>
+                    <p class="mainText">My Funded Fx added...</p>
+                    <p class="time">0:32 AM</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon gray">
+                    <img src="./img/Broadcast.svg" alt="" />
+                  </div>
+                  <div>
+                    <p class="mainText">Surge Trader updated Daily...</p>
+                    <p class="time">Yesterday 12:39 AM</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Your Favourite -->
+              <div class="yourFavourite">
+                <h1 class="subTitle">Your Favourite Prop Firms</h1>
+                <p class="mainText">The Funded Trader Program</p>
+                <p class="mainText">My Forex Funds</p>
+                <p class="mainText">Surge Trader</p>
+              </div>
+              <div class="yourFavourite">
+                <h1 class="subTitle">Your Favourite Programs</h1>
+                <p class="mainText">TFT Royal Challenge</p>
+                <p class="mainText">My Forex Funds Accelerated</p>
+                <p class="mainText">TFT Standard Challenge</p>
+                <p class="mainText">Surge Trader Evaluation</p>
+              </div>
+              <!-- footer -->
+              <footer class="pageFooter mobileView">
+                <div class="row">
+                  <div class="col-lg-2"><span>© 2022 Snow</span></div>
+                  <div class="col-lg-10 text-lg-end mt-3 mt-lg-0">
+                    <a href="#" class="footerLink">About</a>
+                    <a href="#" class="footerLink">Support</a>
+                    <a href="#" class="footerLink">Contact Us</a>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

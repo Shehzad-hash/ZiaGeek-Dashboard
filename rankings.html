@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rankings</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="bodyWrapper rankings">
+      <!-- sideBar -->
+      <div class="sideBar">
+        <i class="fa-solid fa-chevron-left" onclick="sideMenuToggle()"></i>
+        <h1 class="sideHeader">The Prop Firm Journal</h1>
+        <div class="sideDashboardSection">
+          <div class="silentText">Dashboards</div>
+          <a href="./index.html" class="mainText"
+            ><i class="fa-solid fa-chevron-right"></i
+            ><img src="./img/ChartPieSlice.svg" alt="" />Explore</a
+          >
+          <a href="./compare.html"
+          class="mainText active-link"
+            ><i class="fa-solid fa-chevron-right"></i
+            ><img src="./img/ShoppingBagOpen.svg" alt="" />Compare</a
+          >
+        </div>
+        <div class="sideRankingSection">
+          <div class="silentText">Rankings</div>
+          <a href="#" class="sideMenuLink">Pricing</a>
+          <a href="#" class="sideMenuLink ">Account Size</a>
+          <a href="#" class="sideMenuLink">Max Scaling</a>
+          <a href="#" class="sideMenuLink">Max Profit Share</a>
+          <a href="#" class="sideMenuLink">Fastest Payout</a>
+          <a href="#" class="sideMenuLink">Most Voted</a>
+        </div>
+        <a href="#" class="sideBarLogo"
+          ><img src="./img/Snow Logo.png" alt=""
+        /></a>
+      </div>
+      <!-- main body -->
+      <div class="mainBody rankings">
+        <div class="row g-0">
+          <div class="col-lg-9">
+            <!-- nav bar section -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <i
+                  class="fa-solid fa-chevron-right"
+                  onclick="sideMenuToggle()"
+                ></i>
+                <div class="navLeft mx-auto mx-lg-0">
+                  <a href="#"><img src="./img/dashboard.svg" alt="" /></a>
+                  <a href="#"><img src="./img/star.svg" alt="" /></a>
+                  <a href="#" class="silentText">Dashboards /</a>
+                  <a href="./index.html">Explore</a>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <div class="searchArea nav-link">
+                        <img src="./img/Search.svg" alt="" />
+                        <input type="search" placeholder="Search" />
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/sun.svg" alt=""
+                      /></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/timer.svg" alt=""
+                      /></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/bell.svg" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- mainbody content -->
+            <div class="mainBodyContent">
+                <!-- header -->
+                <div class="bodyHeader">
+                 <div class="subTitle">Prop Firm</div>
+                  <div class="subTitle">Program</div>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                    Criteria
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+             <table class="rankingTable">
+                <thead>
+                    <th></th>
+                    <th class="subTitle"></th>
+                    <th class="subTitle"></th>
+                    <th class="subTitle">
+                          <div class="subTitle">Max Profit Share</div>
+                    </th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="mainText">#1 Program</td>
+                        <td class="mainText">Secure The Bag</td>
+                        <td class="mainText">Royal Program</td>
+                        <td class="mainText">96%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#2 Program</td>
+                        <td class="mainText">My Forex Funds</td>
+                        <td class="mainText">Evaluation Program</td>
+                        <td class="mainText">95%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#3 Program</td>
+                        <td class="mainText">The Funded Trader</td>
+                        <td class="mainText">Standard Program</td>
+                        <td class="mainText">95%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#4 Program</td>
+                        <td class="mainText">Ment Funding</td>
+                        <td class="mainText">Standard Program</td>
+                        <td class="mainText">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#5 Program</td>
+                        <td class="mainText">First Class Forex Funds</td>
+                        <td class="mainText">2 Step Program</td>
+                        <td class="mainText">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#6 Program</td>
+                        <td class="mainText">Smart Prop Trader</td>
+                        <td class="mainText">Standard Program</td>
+                        <td class="mainText">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#7 Program</td>
+                        <td class="mainText">Surge Trader</td>
+                        <td class="mainText">Standard Program</td>
+                        <td class="mainText">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#8 Program</td>
+                        <td class="mainText">Rocket 21 Challenge</td>
+                        <td class="mainText">Standard Program</td>
+                        <td class="mainText">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#9 Program</td>
+                        <td class="mainText">Fortunes Funding</td>
+                        <td class="mainText">Standard Program</td>
+                        <td class="mainText">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="mainText">#10 Program</td>
+                        <td class="mainText">E8 </td>
+                        <td class="mainText">ELEV8</td>
+                        <td class="mainText">90%</td>
+                    </tr>
+                </tbody>
+             </table>
+              <!-- footer -->
+              <footer class="pageFooter deskTopView">
+                <div class="row">
+                  <div class="col-lg-4"><span>© 2022 Snow</span></div>
+                  <div class="col-lg-8 text- text-lg-end mt-3 mt-lg-0">
+                    <a href="#" class="footerLink">About</a>
+                    <a href="#" class="footerLink">Support</a>
+                    <a href="#" class="footerLink">Contact Us</a>
+                  </div>
+                </div>
+              </footer>
+           
+          </div>
+          </div>
+          <div class="col-lg-3">
+            <!-- update -->
+            <div class="updateBody">
+              <h1 class="updateTitle">Updates</h1>
+              <div class="updateDetail">
+                <div class="update">
+                  <div class="updateIcon sky"></div>
+                  <div>
+                    <p class="mainText">The Funded Trader Program...</p>
+                    <p class="time">5m ago</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon gray"></div>
+                  <div>
+                    <p class="mainText">True Forex Funds allowed...</p>
+                    <p class="time">1:23 AM</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon sky"></div>
+                  <div>
+                    <p class="mainText">My Funded Fx added...</p>
+                    <p class="time">0:32 AM</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon gray">
+                    <img src="./img/Broadcast.svg" alt="" />
+                  </div>
+                  <div>
+                    <p class="mainText">Surge Trader updated Daily...</p>
+                    <p class="time">Yesterday 12:39 AM</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Your Favourite -->
+              <div class="yourFavourite">
+                <h1 class="subTitle">Your Favourite Prop Firms</h1>
+                <p class="mainText">The Funded Trader Program</p>
+                <p class="mainText">My Forex Funds</p>
+                <p class="mainText">Surge Trader</p>
+              </div>
+              <div class="yourFavourite">
+                <h1 class="subTitle">Your Favourite Programs</h1>
+                <p class="mainText">TFT Royal Challenge</p>
+                <p class="mainText">My Forex Funds Accelerated</p>
+                <p class="mainText">TFT Standard Challenge</p>
+                <p class="mainText">Surge Trader Evaluation</p>
+              </div>
+              <!-- footer -->
+              <footer class="pageFooter mobileView">
+                <div class="row">
+                  <div class="col-lg-2"><span>© 2022 Snow</span></div>
+                  <div class="col-lg-10 text-lg-end mt-3 mt-lg-0">
+                    <a href="#" class="footerLink">About</a>
+                    <a href="#" class="footerLink">Support</a>
+                    <a href="#" class="footerLink">Contact Us</a>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

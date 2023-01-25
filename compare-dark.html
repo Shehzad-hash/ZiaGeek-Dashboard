@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare dark</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="bodyWrapper compareBody">
+      <!-- sideBar -->
+      <div class="sideBar dark">
+        <i class="fa-solid fa-chevron-left" onclick="sideMenuToggle()"></i>
+        <h1 class="sideHeader">The Prop Firm Journal</h1>
+        <div class="sideDashboardSection">
+          <div class="silentText">Dashboards</div>
+          <a href="./index-dark.html" class=""
+            ><i class="fa-solid fa-chevron-right"></i
+            ><img src="./img/ChartPieSlice.svg" alt="" />Explore</a
+          >
+          <a href="#" class="active-link"
+            ><i class="fa-solid fa-chevron-right"></i
+            ><img src="./img/ShoppingBagOpen.svg" alt="" />Compare</a
+          >
+        </div>
+        <div class="sideRankingSection">
+          <div class="silentText">Rankings</div>
+          <a href="#" class="sideMenuLink">Pricing</a>
+          <a href="#" class="sideMenuLink">Account Size</a>
+          <a href="#" class="sideMenuLink">Max Scaling</a>
+          <a href="#" class="sideMenuLink">Max Profit Share</a>
+          <a href="#" class="sideMenuLink">Fastest Payout</a>
+          <a href="#" class="sideMenuLink">Most Voted</a>
+        </div>
+        <a href="#" class="sideBarLogo"
+          ><img src="./img/Snow Logo.png" alt=""
+        /></a>
+      </div>
+      <!-- main body -->
+      <div class="mainBody compare">
+        <div class="row g-0">
+          <div class="col-lg-9">
+            <!-- nav bar section -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary dark">
+              <div class="container-fluid">
+                <i
+                  class="fa-solid fa-chevron-right"
+                  onclick="sideMenuToggle()"
+                ></i>
+                <div class="navLeft mx-auto mx-lg-0">
+                  <a href="#"><img src="./img/dashboard.svg" alt="" /></a>
+                  <a href="#"><img src="./img/star.svg" alt="" /></a>
+                  <a href="#" class="silentText">Dashboards /</a>
+                  <a href="./index.html">Explore</a>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <div class="searchArea nav-link">
+                        <img src="./img/Search.svg" alt="" />
+                        <input type="search" placeholder="Search" />
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/sun.svg" alt=""
+                      /></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/timer.svg" alt=""
+                      /></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"
+                        ><img src="./img/bell.svg" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- mainbody content -->
+            <div class="mainBodyContent dark">
+              <!-- header -->
+              <div class="bodyHeader">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Select Program
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Select Program
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="subTitle">Add another Program</a>
+              </div>
+              <!-- tables  -->
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="mainText">Logo</td>
+                    <td class="mainText">Logo</td>
+                    <td class="mainText">Logo</td>
+                    <td class="mainText"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="mainText">Program Name</td>
+                    <td class="mainText">Standard Challenge</td>
+                    <td class="mainText">Evaluation Program</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Program Type</td>
+                    <td class="mainText">2-Step</td>
+                    <td class="mainText">2-Step</td>
+                    <td class="mainText"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  General Information
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="mainText">Minimum Days</td>
+                    <td class="mainText">10 Days</td>
+                    <td class="mainText green">5 Days</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Max Drawdown Type</td>
+                    <td class="mainText">Fixed</td>
+                    <td class="mainText">Fixed</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Max Drawdown Limit</td>
+                    <td class="mainText">12%</td>
+                    <td class="mainText">12%</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Daily Drawdown Type</td>
+                    <td class="mainText">Equity</td>
+                    <td class="mainText">Equity</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Daily Drawdown Limit</td>
+                    <td class="mainText">6%</td>
+                    <td class="mainText">6%</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Phase 1 Days</td>
+                    <td class="mainText green">35 Days</td>
+                    <td class="mainText">30 Days</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Phase 1 Target</td>
+                    <td class="mainText">10%</td>
+                    <td class="mainText green">8%</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Phase 2 Days</td>
+                    <td class="mainText green">70 Days</td>
+                    <td class="mainText">60 Days</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Phase 2 Target</td>
+                    <td class="mainText">5%</td>
+                    <td class="mainText">5%</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Phase 3 Days</td>
+                    <td class="mainText"></td>
+                    <td class="mainText"></td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Phase 3 Target</td>
+                    <td class="mainText"></td>
+                    <td class="mainText"></td>
+                    <td class="mainText"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Restrictions
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="mainText">SL Required</td>
+                    <td class="mainText">X</td>
+                    <td class="mainText">X</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">EA’s</td>
+                    <td class="mainText">
+                      <i class="fa-sharp fa-solid fa-check"></i>
+                    </td>
+                    <td class="mainText">
+                      <i class="fa-sharp fa-solid fa-check"></i>
+                    </td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Consistency Rule</td>
+                    <td class="mainText">X</td>
+                    <td class="mainText">X</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Weekend Holding</td>
+                    <td class="mainText green">
+                      <i class="fa-sharp fa-solid fa-check"></i>
+                    </td>
+                    <td class="mainText">X</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">News Trading</td>
+                    <td class="mainText">
+                      <i class="fa-sharp fa-solid fa-check"></i>
+                    </td>
+                    <td class="mainText">
+                      <i class="fa-sharp fa-solid fa-check"></i>
+                    </td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Crypto on Weekends</td>
+                    <td class="mainText green">
+                      <i class="fa-sharp fa-solid fa-check"></i>
+                    </td>
+                    <td class="mainText">X</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Others</td>
+                    <td class="mainText">N/A</td>
+                    <td class="mainText">N/A</td>
+                    <td class="mainText"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Price
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="mainText">Account Size</td>
+                    <td class="mainText">< $25,000 | $50,000 | $100,000 ></td>
+                    <td class="mainText">< $25,000 | $50,000 | $100,000 ></td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Price</td>
+                    <td class="mainText">$</td>
+                    <td class="mainText">$</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Price Per Drawdown</td>
+                    <td class="mainText">$</td>
+                    <td class="mainText">$</td>
+                    <td class="mainText"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Payouts
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="mainText">Refund</td>
+                    <td class="mainText">100%</td>
+                    <td class="mainText green">112%</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">First Profit Split</td>
+                    <td class="mainText green">80%</td>
+                    <td class="mainText">75%</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">First Withdrawal</td>
+                    <td class="mainText">30 Days</td>
+                    <td class="mainText">30 Days</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Profits from Demo Phase?</td>
+                    <td class="mainText">X</td>
+                    <td class="mainText">X</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Max Profit Split</td>
+                    <td class="mainText green">95%</td>
+                    <td class="mainText">85%</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Min. Days to Payout</td>
+                    <td class="mainText">50 Days</td>
+                    <td class="mainText green">40 Days</td>
+                    <td class="mainText"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Scaling
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="mainText">Balance Increase Requirement</td>
+                    <td class="mainText">10% Profits</td>
+                    <td class="mainText">10% Profits</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Scale Increase</td>
+                    <td class="mainText green">30% Increase</td>
+                    <td class="mainText">25% Profits</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Max. Funded Allocation</td>
+                    <td class="mainText green">$400,000</td>
+                    <td class="mainText">$200,000</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Max. Scaling Allocation</td>
+                    <td class="mainText">$1,500,000</td>
+                    <td class="mainText green">$2,000,000</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Time to 1M from Max. Allocation</td>
+                    <td class="mainText green">1 Year</td>
+                    <td class="mainText">2 Year</td>
+                    <td class="mainText"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Support
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="mainText">Website Live Chat?</td>
+                    <td class="mainText">
+                      <i class="fa-sharp fa-solid fa-check"></i>
+                    </td>
+                    <td class="mainText">
+                      <i class="fa-sharp fa-solid fa-check"></i>
+                    </td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Live Chat days</td>
+                    <td class="mainText green">Monday to Sunday</td>
+                    <td class="mainText">Monday to Friday</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">Live Chat Hours</td>
+                    <td class="mainText">00:00 - 23:59</td>
+                    <td class="mainText">00:00 - 23:59</td>
+                    <td class="mainText"></td>
+                  </tr>
+                  <tr>
+                    <td class="mainText">TrustPilot Rating</td>
+                    <td class="mainText green">4.9 Stars</td>
+                    <td class="mainText">4.7 Stars</td>
+                    <td class="mainText"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- footer -->
+              <footer class="pageFooter deskTopView">
+                <div class="row">
+                  <div class="col-lg-4"><span>© 2022 Snow</span></div>
+                  <div class="col-lg-8 text- text-lg-end mt-3 mt-lg-0">
+                    <a href="#" class="footerLink">About</a>
+                    <a href="#" class="footerLink">Support</a>
+                    <a href="#" class="footerLink">Contact Us</a>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <!-- update -->
+            <div class="updateBody dark">
+              <h1 class="updateTitle">Updates</h1>
+              <div class="updateDetail">
+                <div class="update">
+                  <div class="updateIcon sky"></div>
+                  <div>
+                    <p class="mainText">The Funded Trader Program...</p>
+                    <p class="time">5m ago</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon gray"></div>
+                  <div>
+                    <p class="mainText">True Forex Funds allowed...</p>
+                    <p class="time">1:23 AM</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon sky"></div>
+                  <div>
+                    <p class="mainText">My Funded Fx added...</p>
+                    <p class="time">0:32 AM</p>
+                  </div>
+                </div>
+                <div class="update">
+                  <div class="updateIcon gray">
+                    <img src="./img/Broadcast.svg" alt="" />
+                  </div>
+                  <div>
+                    <p class="mainText">Surge Trader updated Daily...</p>
+                    <p class="time">Yesterday 12:39 AM</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Your Favourite -->
+              <div class="yourFavourite">
+                <h1 class="subTitle">Your Favourite Prop Firms</h1>
+                <p class="mainText">The Funded Trader Program</p>
+                <p class="mainText">My Forex Funds</p>
+                <p class="mainText">Surge Trader</p>
+              </div>
+              <div class="yourFavourite">
+                <h1 class="subTitle">Your Favourite Programs</h1>
+                <p class="mainText">TFT Royal Challenge</p>
+                <p class="mainText">My Forex Funds Accelerated</p>
+                <p class="mainText">TFT Standard Challenge</p>
+                <p class="mainText">Surge Trader Evaluation</p>
+              </div>
+              <!-- footer -->
+              <footer class="pageFooter mobileView">
+                <div class="row">
+                  <div class="col-lg-2"><span>© 2022 Snow</span></div>
+                  <div class="col-lg-10 text-lg-end mt-3 mt-lg-0">
+                    <a href="#" class="footerLink">About</a>
+                    <a href="#" class="footerLink">Support</a>
+                    <a href="#" class="footerLink">Contact Us</a>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
