@@ -588,13 +588,13 @@ html {
 .navbar.dark .nav-item img {
   filter: invert();
 }
-.navbar.dark .navLeft a:last-child{
+.navbar.dark .navLeft a:last-child {
   color: white;
 }
 .mainBody .navbar.dark .searchArea input {
   background: rgba(255, 255, 255, 0.1);
 }
-.mainBodyContent.dark .dropdown-menu{
+.mainBodyContent.dark .dropdown-menu {
   background-color: #1c1c1c;
   border: 1px solid black;
 }
@@ -614,8 +614,8 @@ html {
 .mainBodyContent.dark .website {
   background: rgba(255, 255, 255, 0.8);
 }
-.mainBodyContent.dark .challengeCardGray{
-  background: #E3F5FF;
+.mainBodyContent.dark .challengeCardGray {
+  background: #e3f5ff;
 }
 .mainBodyContent.dark .challengeCardSky .mainTitle,
 .mainBodyContent.dark .challengeCardGray .mainTitle,
@@ -643,6 +643,11 @@ html {
 /* dark tabels */
 .mainBodyContent.dark table td,
 .mainBodyContent.dark a {
+  color: white;
+}
+.mainBodyContent.dark table td,
+.mainBodyContent.dark a:hover {
+  background-color: black;
   color: white;
 }
 
