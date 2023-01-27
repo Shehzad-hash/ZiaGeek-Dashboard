@@ -20,6 +20,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.changeValBtn{
+  cursor: pointer;
+}
 .mainTitle {
   font-size: 1.5em;
   font-weight: 600;
@@ -312,7 +315,11 @@ html {
 }
 .companySection .programSection .sword,
 .companySection .programCard {
-  margin-top: 5em;
+  margin-top: 5.5em;
+}
+.mainBodyContent.dark .companySection .programSection .sword,
+.mainBodyContent.dark .companySection .programCard {
+  margin-top: 4.3em;
 }
 
 .companySection .capCard:nth-last-of-type(2) {
@@ -431,7 +438,7 @@ html {
   padding-bottom: 2em;
 }
 .scaleCard .subTitle {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 /* supportInfo */
 .supportInfo {
@@ -558,6 +565,12 @@ html {
   padding: 0.5em 5em;
   width: 15em;
 }
+.mainBody.compare .bodyHeader table td{
+  padding: 0;
+}
+.mainBody.compare .bodyHeader table td .btn{
+  margin-right: -2em;
+}
 .mainBody.compare .mainBodyContent.dark{
   padding: 1em 0;
 }
@@ -580,15 +593,19 @@ html {
 .mainBody.compare .mainBodyContent.dark  .dropdown .btn{
   color: white;
   margin-left: 1em;
+  margin-bottom: 1em;
 }
 .mainBody.compare .mainBodyContent.dark  .bodyHeader .dropdown .btn{
   transform: rotateX(180deg);
+  margin: 0;
+  margin-right: -2em;
 }
 .mainBody.compare .mainBodyContent.dark .tableSection{
   background: rgba(0, 0, 0, 0.07);
 border: 1px solid rgba(255, 255, 255, 0.23);
 border-radius: 8px;
 margin-bottom: 1em;
+padding: 0.5em 0;
 }
 .mainBody.compare .mainBodyContent.dark .tableSection .dropdown{
   margin-bottom: 1em;
@@ -604,6 +621,14 @@ margin-bottom: 1em;
 }
 .mainBody.compare .mainBodyContent {
   padding: 1em;
+}
+.mainBody.compare .mainBodyContent.dark .bodyHeader table{
+  margin: 0;
+}
+.mainBody.compare .mainBodyContent.dark .bodyHeader table td{
+  padding: 0;
+ 
+  text-align: center;
 }
 /* rankings paage */
 .mainBody.rankings .mainBodyContent.dark .pageFooter.deskTopView{
@@ -621,6 +646,10 @@ margin-bottom: 1em;
 .mainBody.rankings table td:first-child {
   text-align: start;
 }
+.mainBody.rankings .bodyHeader table td{
+  width: 15em;
+  padding: 0;
+}
 .mainBody.rankings .dropdown .btn {
   background-color: transparent;
   box-shadow: none !important;
@@ -629,8 +658,7 @@ margin-bottom: 1em;
   font-size: 0.9em;
   font-weight: 600;
   padding: 0;
-  display: flex;
-  align-items: center;
+  margin-right: -8em;
 }
 .rankings .bodyHeader {
   display: flex;
@@ -745,12 +773,6 @@ margin-bottom: 1em;
 
 .mainBodyContent.dark table td.green {
   color: green;
-}
-.mainBodyContent.dark .bodyHeader .subTitle {
-  color: white;
-}
-.mainBody.compare .mainBodyContent.dark .bodyHeader .subTitle{
-  transform: rotateX(180deg);
 }
 .mainBodyContent.dark h1 {
   font-family: "cf bold";
@@ -867,5 +889,17 @@ margin-bottom: 1em;
   .mainBody.compare .bodyHeader a,
   .mainBody.compare .bodyHeader .btn {
     margin: initial;
+  }
+  .mainBody.compare .bodyHeader table td .btn{
+    margin-right: 0;
+  }
+  .mainBody.compare .mainBodyContent.dark .bodyHeader .dropdown .btn{
+    margin-right: 0;
+  }
+  .mainBody.rankings .mainBodyContent.dark .bodyHeader .dropdown .btn{
+    margin-right: 0;
+  }
+  .mainBody.rankings .dropdown .btn{
+    margin-right: 0;
   }
 }

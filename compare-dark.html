@@ -122,47 +122,79 @@
             <div class="mainBodyContent dark">
               <!-- header -->
               <div class="bodyHeader">
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Select Program
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Select Program
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </div>
-                <a href="#" class="subTitle">Add another Program</a>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-secondary"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Select Program
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                              <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                        <td>
+                          <div class="dropdown">
+                            <button
+                              class="btn btn-secondary"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Select Program
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li>
+                                <a class="dropdown-item" href="#">Another action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                     <td>
+                       <div class="dropdown">
+                        <button
+                          class="btn btn-secondary"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        Add another Program
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </li>
+                        </ul>
+                      </div>
+                     </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <!-- tables  -->
               <table >
@@ -388,8 +420,8 @@
                   <tbody>
                     <tr>
                       <td class="mainText">Account Size</td>
-                      <td class="mainText"><| $50,000 |></td>
-                      <td class="mainText"><| $50,000 |></td>
+                      <td class="mainText"><span onclick="leftChange()" class="changeValBtn"><</span>| $<span id="value">50,000</span>|<span onclick="rightChange()" class="changeValBtn">></span></td>
+                      <td class="mainText"><span onclick="leftChange2()" class="changeValBtn"><</span>| $<span id="value2">50,000</span>|<span onclick="rightChange2()" class="changeValBtn">></span></td>
                       <td class="mainText"></td>
                     </tr>
                     <tr>
