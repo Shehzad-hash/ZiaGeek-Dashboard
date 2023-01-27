@@ -112,8 +112,12 @@ html {
   color: rgba(0, 0, 0, 0.4);
 }
 .sideBar .sideRankingSection a {
-  padding: 0.3em 1em 0.3em 3em;
+  padding: 0.3em 1em 0.3em 1.5em;
   margin-bottom: 0.2em;
+}
+.sideBar .sideRankingSection a i {
+  color: white;
+  margin-right: 0.4em;
 }
 .sideRankingSection a.active-link {
   background: rgba(0, 0, 0, 0.05);
@@ -223,13 +227,14 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #d6f4d7;
 }
-.updateDetail .update .updateIcon.gray {
+/* .updateDetail .update .updateIcon.gray {
   background: #e5ecf6;
 }
 .updateDetail .update .updateIcon.sky {
   background: #e3f5ff;
-}
+} */
 /* your Favourite */
 .yourFavourite {
   margin-top: 3em;
@@ -281,7 +286,7 @@ html {
 .mainBodyContent.dark .companySection .programCard .mainTitle {
   margin-bottom: 1em;
 }
-.mainBodyContent.dark .companySection .programCard .smText{
+.mainBodyContent.dark .companySection .programCard .smText {
   margin-bottom: 0;
 }
 .companySection .capCard {
@@ -292,16 +297,16 @@ html {
   margin-bottom: 0.5em;
   position: relative;
 }
-.mainBodyContent.dark .companySection .capCard .smText.dark{
+.mainBodyContent.dark .companySection .capCard .smText.dark {
   position: absolute;
   left: 1em;
   top: 50%;
   transform: translateY(-50%);
 }
-.mainBodyContent.dark .capCard.dark{
+.mainBodyContent.dark .capCard.dark {
   padding: 1em;
 }
-.mainBodyContent.dark .capCard.dark h1{
+.mainBodyContent.dark .capCard.dark h1 {
   display: inline-block;
   margin-left: 1em;
 }
@@ -452,6 +457,10 @@ html {
 .media a:hover {
   transform: translateY(-10%);
 }
+.media .mediaIcon {
+  height: 50px;
+  width: 50px;
+}
 /* website */
 .website {
   text-align: center;
@@ -482,10 +491,10 @@ html {
   padding: 0.5em 1.5em;
   margin-top: 30em;
 }
-.mainBodyContent.dark .pageFooter{
+.mainBodyContent.dark .pageFooter {
   margin-top: 5em;
 }
-.sideBar.dark .sideBarLogo{
+.sideBar.dark .sideBarLogo {
   width: 100%;
 }
 .pageFooter a,
@@ -615,13 +624,13 @@ html {
 .navbar.dark .nav-item img {
   filter: invert();
 }
-.navbar.dark .navLeft a:last-child{
+.navbar.dark .navLeft a:last-child {
   color: white;
 }
 .mainBody .navbar.dark .searchArea input {
   background: rgba(255, 255, 255, 0.1);
 }
-.mainBodyContent.dark .dropdown-menu{
+.mainBodyContent.dark .dropdown-menu {
   background-color: #1c1c1c;
   border: 1px solid black;
 }
@@ -636,16 +645,19 @@ html {
 .mainBodyContent.dark .ceo {
   background: #333333;
 }
-.mainBodyContent.dark .challengeCardSky{
-  background-color: #F7F9FB;
+.mainBodyContent.dark .challengeCardSky {
+  background-color: #f7f9fb;
   justify-content: space-between;
+}
+.challengeCardSky .mainTitle {
+  margin-bottom: 0.2em;
 }
 .mainBodyContent.dark .supportInfo,
 .mainBodyContent.dark .website {
   background: rgba(255, 255, 255, 0.8);
 }
-.mainBodyContent.dark .challengeCardGray{
-  background: #E3F5FF;
+.mainBodyContent.dark .challengeCardGray {
+  background: #e3f5ff;
   justify-content: space-between;
 }
 .mainBodyContent.dark .challengeCardSky .mainTitle,
@@ -705,7 +717,7 @@ html {
   font-family: "cf light";
 }
 /* ceo section dark */
-.mainBodyContent.dark .ceo .col-7 div{
+.mainBodyContent.dark .ceo .col-7 div {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -713,17 +725,17 @@ html {
   justify-content: space-between;
 }
 
-.mainBodyContent.dark .bodyHeader .col-6 .dropdown.company{
+.mainBodyContent.dark .bodyHeader .col-6 .dropdown.company {
   margin-left: -1.7em;
 }
-.mainBodyContent.dark .bodyHeader .col-6 .dropdown.program{
+.mainBodyContent.dark .bodyHeader .col-6 .dropdown.program {
   margin-left: -0.5em;
 }
 @media (max-width: 992px) {
-  .mainBodyContent.dark .bodyHeader .col-6 .dropdown.company{
+  .mainBodyContent.dark .bodyHeader .col-6 .dropdown.company {
     margin-left: 0;
   }
-  .mainBodyContent.dark .bodyHeader .col-6 .dropdown.program{
+  .mainBodyContent.dark .bodyHeader .col-6 .dropdown.program {
     margin-left: 0;
   }
   .mainTitle {
