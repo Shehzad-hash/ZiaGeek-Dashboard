@@ -43,12 +43,24 @@
         </div>
         <div class="sideRankingSection">
           <div class="silentText">Rankings</div>
-          <a href="#" class="sideMenuLink">Pricing</a>
-          <a href="#" class="sideMenuLink ">Account Size</a>
-          <a href="#" class="sideMenuLink">Max Scaling</a>
-          <a href="#" class="sideMenuLink">Max Profit Share</a>
-          <a href="#" class="sideMenuLink">Fastest Payout</a>
-          <a href="#" class="sideMenuLink">Most Voted</a>
+          <a href="#" class="sideMenuLink"
+            ><i class="fa-solid fa-arrow-trend-up"></i> Pricing</a
+          >
+          <a href="#" class="sideMenuLink active-link"
+            ><i class="fa-solid fa-arrow-trend-up"></i> Account Size</a
+          >
+          <a href="#" class="sideMenuLink"
+            ><i class="fa-solid fa-arrow-trend-up"></i> Max Scaling</a
+          >
+          <a href="#" class="sideMenuLink"
+            ><i class="fa-solid fa-arrow-trend-up"></i> Max Profit Share</a
+          >
+          <a href="#" class="sideMenuLink"
+            ><i class="fa-solid fa-arrow-trend-up"></i> Fastest Payout</a
+          >
+          <a href="#" class="sideMenuLink"
+            ><i class="fa-solid fa-arrow-trend-up"></i> Most Voted</a
+          >
         </div>
         <a href="#" class="sideBarLogo"
           ><h1>The Prop Firm Journal</h1></a>
@@ -56,7 +68,7 @@
       <!-- main body -->
       <div class="mainBody rankings">
         <div class="row g-0">
-          <div class="col-lg-9">
+          <div class="col-lg-10">
             <!-- nav bar section -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary dark">
               <div class="container-fluid">
@@ -66,7 +78,7 @@
                 ></i>
                 <div class="navLeft mx-auto mx-lg-0">
                   <a href="#"><img src="./img/dashboard.svg" alt="" /></a>
-                  <a href="#"><img src="./img/star.svg" alt="" /></a>
+                  
                   <a href="#" class="silentText">Dashboards /</a>
                   <a href="./index.html">Explore</a>
                 </div>
@@ -97,11 +109,7 @@
                         ><img src="./img/sun.svg" alt=""
                       /></a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"
-                        ><img src="./img/timer.svg" alt=""
-                      /></a>
-                    </li>
+                   
                     <li class="nav-item">
                       <a class="nav-link" href="#"
                         ><img src="./img/bell.svg" alt=""
@@ -115,8 +123,46 @@
             <div class="mainBodyContent dark">
                 <!-- header -->
                 <div class="bodyHeader">
-                 <div class="subTitle">Prop Firm</div>
-                  <div class="subTitle">Program</div>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                    Prop Firm
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                    Program
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </div>
                   <div class="dropdown">
                     <button
                       class="btn btn-secondary"
@@ -225,27 +271,27 @@
            
           </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-2">
             <!-- update -->
             <div class="updateBody dark">
               <h1 class="updateTitle">Updates</h1>
               <div class="updateDetail">
                 <div class="update">
-                  <div class="updateIcon sky"></div>
+                  <div class="updateIcon sky"><img src="./img/Broadcast.svg" alt="" /></div>
                   <div>
                     <p class="mainText">The Funded Trader Program...</p>
                     <p class="time">5m ago</p>
                   </div>
                 </div>
                 <div class="update">
-                  <div class="updateIcon gray"></div>
+                  <div class="updateIcon gray"><img src="./img/Broadcast.svg" alt="" /></div>
                   <div>
                     <p class="mainText">True Forex Funds allowed...</p>
                     <p class="time">1:23 AM</p>
                   </div>
                 </div>
                 <div class="update">
-                  <div class="updateIcon sky"></div>
+                  <div class="updateIcon sky"><img src="./img/Broadcast.svg" alt="" /></div>
                   <div>
                     <p class="mainText">My Funded Fx added...</p>
                     <p class="time">0:32 AM</p>

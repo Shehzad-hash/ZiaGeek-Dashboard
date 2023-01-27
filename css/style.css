@@ -348,6 +348,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .challenge .challengeCardSky .row,
 .challenge .challengeCardGray .row {
@@ -362,7 +363,6 @@ html {
 .restrictionContainer {
   background: #d9d9d9;
   padding: 1em;
-  padding-bottom: 0;
 }
 .restrictionContainer .restriction {
   display: flex;
@@ -372,6 +372,7 @@ html {
   font-size: 0.75em;
   font-weight: 400;
   margin-top: 1em;
+  text-align: end;
 }
 .restrictions {
   padding: 0 0.5em;
@@ -496,6 +497,7 @@ html {
 }
 .sideBar.dark .sideBarLogo {
   width: 100%;
+  text-align: center;
 }
 .pageFooter a,
 .pageFooter span {
@@ -518,6 +520,25 @@ html {
   align-items: center;
   gap: 1em;
 }
+.mainBody.compare .mainBodyContent.dark  .bodyHeader{
+  overflow-x: scroll;
+  transform: rotateX(180deg);
+  /* overflow-x: auto; */
+}
+.mainBody.compare .mainBodyContent.dark  .bodyHeader::-webkit-scrollbar{
+  width: 0.5em;
+ background: transparent;
+}
+.mainBody.compare .mainBodyContent.dark  .bodyHeader::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+.mainBody.compare .mainBodyContent.dark  .bodyHeader::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, 0.2);
+  /* White/20% */
+  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
 .mainBody.compare .bodyHeader a {
   text-decoration: none;
 }
@@ -530,11 +551,16 @@ html {
   margin-bottom: 3em;
   margin-top: 1em;
 }
+.mainBody.compare .tableSection table{
+  margin: 0;
+}
 .mainBody.compare table td {
   padding: 0.5em 5em;
   width: 15em;
 }
-
+.mainBody.compare .mainBodyContent.dark{
+  padding: 1em 0;
+}
 .mainBody.compare table td:first-child {
   padding: 0.5em 0;
   /* padding-right: 0em; */
@@ -551,6 +577,25 @@ html {
   box-shadow: none !important;
   border: none !important;
 }
+.mainBody.compare .mainBodyContent.dark  .dropdown .btn{
+  color: white;
+  margin-left: 1em;
+}
+.mainBody.compare .mainBodyContent.dark  .bodyHeader .dropdown .btn{
+  transform: rotateX(180deg);
+}
+.mainBody.compare .mainBodyContent.dark .tableSection{
+  background: rgba(0, 0, 0, 0.07);
+border: 1px solid rgba(255, 255, 255, 0.23);
+border-radius: 8px;
+margin-bottom: 1em;
+}
+.mainBody.compare .mainBodyContent.dark .tableSection .dropdown{
+  margin-bottom: 1em;
+}
+.mainBody.compare .mainBodyContent.dark table td:first-child{
+  padding-left: 1em;
+}
 .mainBody.compare table tr td:nth-of-type(2) {
   text-align: center;
 }
@@ -561,6 +606,9 @@ html {
   padding: 1em;
 }
 /* rankings paage */
+.mainBody.rankings .mainBodyContent.dark .pageFooter.deskTopView{
+  margin-top: 30em;
+}
 .mainBody.rankings table {
   width: 100%;
   margin-top: 1em;
@@ -648,6 +696,12 @@ html {
 .mainBodyContent.dark .challengeCardSky {
   background-color: #f7f9fb;
   justify-content: space-between;
+  position: relative;
+}
+.centerElement{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
 }
 .challengeCardSky .mainTitle {
   margin-bottom: 0.2em;
@@ -694,6 +748,9 @@ html {
 }
 .mainBodyContent.dark .bodyHeader .subTitle {
   color: white;
+}
+.mainBody.compare .mainBodyContent.dark .bodyHeader .subTitle{
+  transform: rotateX(180deg);
 }
 .mainBodyContent.dark h1 {
   font-family: "cf bold";
