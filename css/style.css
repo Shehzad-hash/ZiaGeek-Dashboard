@@ -283,14 +283,17 @@ html {
   text-align: center;
   padding: 1.5em 0;
 }
+.mainBodyContent.dark .companySection .programCard{
+  padding-top: 0.5em;
+}
 .companySection .programCard .smText {
   margin-bottom: 3em;
 }
 .mainBodyContent.dark .companySection .programCard .mainTitle {
-  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 .mainBodyContent.dark .companySection .programCard .smText {
-  margin-bottom: 0;
+  margin-bottom: 2em;
 }
 .companySection .capCard {
   background: #e5ecf6;
@@ -320,6 +323,7 @@ html {
 .mainBodyContent.dark .companySection .programSection .sword,
 .mainBodyContent.dark .companySection .programCard {
   margin-top: 4.3em;
+  padding-bottom: 2.5em;
 }
 
 .companySection .capCard:nth-last-of-type(2) {
